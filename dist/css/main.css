@@ -228,7 +228,7 @@ nav .brand:hover {
 }
 
 .bg-contact {
-  background-image: url(/img/contact.jpg);
+  background-image: url("../img/contact.jpg");
   background-size: cover;
   height: 140vh;
   position: absolute;
@@ -290,12 +290,14 @@ body {
   background-color: #FBF2E9;
   background-image: -webkit-gradient(linear, to-right purple 33%, color-stop(33%, pink));
   background-image: linear-gradient(to-right purple 33%, pink 33%);
+  line-height: 1.5;
   font-family: "Roboto", sans-serif;
 }
 
 .title {
   font-family: "Comfortaa", cursive;
   font-size: 64px;
+  line-height: 1;
 }
 
 p {

@@ -5,57 +5,58 @@
 @import 'catalogue';
 @import 'contact';
 body {
-    font-size: 18px;
-    background-color: $pink;
-    background-image: linear-gradient(to-right purple 33%, pink 33%);
-    // line-height: 1;
-    font-family: $secondary-font;
+   font-size: 18px;
+   background-color: $pink;
+   background-image: linear-gradient(to-right purple 33%, pink 33%);
+   line-height: 1.5;
+   font-family: $secondary-font;
 }
 
 .title {
-    font-family: $primary-font;
-    font-size: 64px;
+   font-family: $primary-font;
+   font-size: 64px;
+   line-height: 1;
 }
 
 p {
-    font-size: 14px;
+   font-size: 14px;
 }
 
 .btn {
-    padding: 10px;
-    background-color: $purple;
-    border: none;
-    color: #fff;
+   padding: 10px;
+   background-color: $purple;
+   border: none;
+   color: #fff;
 }
 
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    // background-color: #fff;
+   max-width: 1000px;
+   margin: 0 auto;
+   // background-color: #fff;
 }
 
 .bg-container {
-    position: absolute;
-    width: 100%;
-    z-index: -2;
-    top: 0;
-    left: 0;
-    .bg {
-        width: 100%;
-    }
+   position: absolute;
+   width: 100%;
+   z-index: -2;
+   top: 0;
+   left: 0;
+   .bg {
+      width: 100%;
+   }
 }
 
 footer {
-    position: absolute;
-    background-color: $purple;
-    height: 50px;
-    width: 100%;
-    top: 400vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    p {
-        margin: 0 50px;
-    }
+   position: absolute;
+   background-color: $purple;
+   height: 50px;
+   width: 100%;
+   top: 400vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: #fff;
+   p {
+      margin: 0 50px;
+   }
 }
