@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #F8F9F9;
+  font-family: "Comfortaa", cursive;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+}
+
+nav ul {
+  margin: 0;
+  padding: 23px 0;
+  background-color: #A18189;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+nav li:first-child {
+  padding-left: 20px;
+}
+
+nav a {
+  text-align: center;
+  color: #FBF2E9;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+nav a:hover {
+  color: #A18189;
+  background-color: #FBF2E9;
+}
+
+nav .brand {
+  margin-left: 50px;
+  color: #A18189;
+  font-size: 16px;
+}
+
+nav .brand:hover {
+  font-size: 1em;
+  background-color: none;
+}
+
+.bg-home {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(60%, transparent), color-stop(60%, #A18189), to(#A18189)), -webkit-gradient(linear, left top, left bottom, from(#F8F9F9), color-stop(75%, #F8F9F9), color-stop(75%, #FBF2E9), to(#FBF2E9));
+  background-image: linear-gradient(90deg, transparent 0%, transparent 60%, #A18189 60%, #A18189 100%), linear-gradient(to bottom, #F8F9F9 0%, #F8F9F9 75%, #FBF2E9 75%, #FBF2E9 100%);
+}
+
+.home {
+  padding-top: 60px;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .content {
+  position: relative;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 2 0px;
+          flex: 2 2 0;
+}
+
+.home .content h1 {
+  position: absolute;
+  width: 50%;
+  top: 100px;
+}
+
+.home .content p {
+  position: absolute;
+  width: 70%;
+  top: 270px;
+}
+
+.home .content .catalogue-btn {
+  position: absolute;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 10px 20px;
+  top: 350px;
+}
+
+.home .img-home {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 3 0px;
+          flex: 3 3 0;
+  width: 70%;
+  overflow: hidden;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.home .img-home img {
+  position: absolute;
+  left: -150px;
+}
+
+.bg-about {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(60%, transparent), color-stop(60%, #A18189), to(#A18189));
+  background-image: linear-gradient(90deg, transparent 0%, transparent 60%, #A18189 60%, #A18189 100%);
+}
+
+.about-us {
+  height: 100vh;
+  background-color: #FBF2E9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about-us .img-about-us {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 2 0px;
+          flex: 2 2 0;
+  height: auto;
+}
+
+.about-us .img-about-us img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-us .content {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 3 0px;
+          flex: 3 3 0;
+}
+
+.about-us .content .title {
+  padding: 0 60px;
+  margin-bottom: 30px;
+}
+
+.about-us .content p {
+  padding: 0 60px;
+  margin-bottom: 20px;
+}
+
+.bg-catalogue {
+  position: relative;
+  height: 100vh;
+}
+
+.catalogue {
+  height: 100vh;
+  display: block;
+  text-align: center;
+}
+
+.catalogue .content {
+  padding: 100px 0 0 0;
+}
+
+.catalogue .content .title {
+  margin-bottom: 10px;
+}
+
+.catalogue .content p {
+  margin: 0 auto 15px;
+  width: 50%;
+}
+
+.catalogue .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalogue .img-catalogue {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+}
+
+.catalogue .img-catalogue img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.catalogue .btn-catalogue {
+  position: absolute;
+  font-family: "Comfortaa", cursive;
+  width: 40%;
+  height: 50px;
+  left: 30%;
+  bottom: -20px;
+}
+
+.bg-contact {
+  background-image: url(/img/contact.jpg);
+  background-size: cover;
+  height: 140vh;
+  position: absolute;
+  top: 260vh;
+}
+
+.contact-us .content {
+  background-color: #F8F9F9;
+  padding: 50px;
+  border-radius: 20px;
+  margin: 150px 0 0 auto;
+  width: 60%;
+  position: relative;
+}
+
+.contact-us .content .title {
+  margin-bottom: 15px;
+}
+
+.contact-us .content p {
+  width: 60%;
+  margin-bottom: 15px;
+}
+
+.contact-us .content p:nth-child(5) {
+  margin: 0;
+}
+
+.contact-us .content p:nth-child(6) {
+  margin: 0;
+}
+
+.contact-us .content .email {
+  color: #A18189;
+  font-size: 18px;
+}
+
+.contact-us .content .social {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  bottom: 50px;
+  right: 50px;
+  color: #A18189;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact-us .content .social span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+body {
+  font-size: 18px;
+  background-color: #FBF2E9;
+  background-image: -webkit-gradient(linear, to-right purple 33%, color-stop(33%, pink));
+  background-image: linear-gradient(to-right purple 33%, pink 33%);
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  font-family: "Comfortaa", cursive;
+  font-size: 64px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #A18189;
+  border: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bg-container {
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+
+.bg-container .bg {
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  background-color: #A18189;
+  height: 50px;
+  width: 100%;
+  top: 400vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+footer p {
+  margin: 0 50px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,47 @@
+nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    width: 100%;
+    background-color: $grey;
+    font-family: $primary-font;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    ul {
+        margin: 0;
+        padding: 23px 0;
+        background-color: $purple;
+        flex-basis: 35%;
+    }
+    li {
+        display: inline;
+        list-style-type: none;
+        padding-right: 20px;
+        &:first-child {
+            padding-left: 20px;
+        }
+    }
+    a {
+        text-align: center;
+        color: $pink;
+        text-decoration: none;
+        font-size: 0.8em;
+        &:hover {
+            color: $purple;
+            background-color: $pink;
+        }
+    }
+    .brand {
+        margin-left: 50px;
+        color: $purple;
+        font-size: 16px;
+        &:hover {
+            font-size: 1em;
+            background-color: none;
+        }
+    }
+}

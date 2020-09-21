@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>BLOOM</title>
+      <link rel="stylesheet" href="/css/main.css" />
+      <script
+         src="https://kit.fontawesome.com/d1167be4df.js"
+         crossorigin="anonymous"
+      ></script>
+   </head>
+
+   <body>
+      <div class="bg-container">
+         <div class="bg bg-home"></div>
+         <div class="bg bg-about"></div>
+         <div class="bg bg-catalogue"></div>
+         <div class="bg bg-contact"></div>
+         <footer>
+            <p>&copy;2019</p>
+            <p>design by anis maghfiroh</p>
+         </footer>
+      </div>
+
+      <nav>
+         <a href="#home" class="brand"> BLOOM </a>
+
+         <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#catalogue">Catalogue</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+      </nav>
+
+      <div class="container" id="home">
+         <section class="home">
+            <div class="content">
+               <h1 class="title">Bouquet Specialist</h1>
+               <p class="tagline">
+                  From romantic roses to modern masterpice, we have the perfect
+                  bouquet to express your emotions.
+               </p>
+               <button class="btn catalogue-btn">View Catalogue</button>
+            </div>
+            <div class="img-home">
+               <img src="img/home.jpg" alt="" height="600px" />
+            </div>
+         </section>
+
+         <section class="about-us" id="about">
+            <div class="img-about-us">
+               <img src="img/about-us.jpg" alt="" />
+            </div>
+            <div class="content">
+               <h1 class="title">About Us</h1>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+               </p>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+               </p>
+            </div>
+         </section>
+
+         <section class="catalogue" id="catalogue">
+            <div class="content">
+               <h1 class="title">Catalogue</h1>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </p>
+            </div>
+            <div class="img-container">
+               <div class="img-catalogue">
+                  <img src="img/bouquet1.jpg" alt="" />
+                  <button class="btn btn-catalogue">Bridal Bouquet</button>
+               </div>
+               <div class="img-catalogue">
+                  <img src="img/bouquet2.jpg" alt="" />
+                  <button class="btn btn-catalogue">For Aniversary</button>
+               </div>
+               <div class="img-catalogue">
+                  <img src="img/bouquet3.jpg" alt="" />
+                  <button class="btn btn-catalogue">For Valentine</button>
+               </div>
+            </div>
+         </section>
+
+         <section class="contact-us" id="contact">
+            <div class="content">
+               <h1 class="title">Contact</h1>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+               </p>
+               <p class="email">care@bloom.co.id</p>
+               <p>+62 8124 5678 093</p>
+               <p>Lorem ipsum dolor sit amet.</p>
+               <p>Semarang, Indonesia</p>
+               <div class="social">
+                  <span class="ig"><i class="fab fa-instagram fa-2x"></i></span>
+                  <span class="pin"
+                     ><i class="fab fa-pinterest-p fa-2x"></i
+                  ></span>
+                  <span class="fb"
+                     ><i class="fab fa-facebook-square fa-2x"></i
+                  ></span>
+                  <span class="tw"><i class="fab fa-twitter fa-2x"></i></span>
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <script>
+         // Select all links with hashes
+         $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+               // On-page links
+               if (
+                  location.pathname.replace(/^\//, '') ==
+                     this.pathname.replace(/^\//, '') &&
+                  location.hostname == this.hostname
+               ) {
+                  // Figure out element to scroll to
+                  var target = $(this.hash);
+                  target = target.length
+                     ? target
+                     : $('[name=' + this.hash.slice(1) + ']');
+                  // Does a scroll target exist?
+                  if (target.length) {
+                     // Only prevent default if animation is actually gonna happen
+                     event.preventDefault();
+                     $('html, body').animate(
+                        {
+                           scrollTop: target.offset().top,
+                        },
+                        1000,
+                        function () {
+                           // Callback after animation
+                           // Must change focus!
+                           // var $target = $(target);
+                           // $target.focus();
+                           // if ($target.is(":focus")) { // Checking if the target was focused
+                           //     return false;
+                           // } else {
+                           //     $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                           //     $target.focus(); // Set focus again
+                           // };
+                        }
+                     );
+                  }
+               }
+            });
+      </script>
+   </body>
+</html>
